@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- fort -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
+        rel="stylesheet">
+
+    <!-- js -->
+    <script src="./assets/js/renderLayout.js"></script>
+
+</head>
+
+<body>
+    <header id="header" class="header">
+
+    </header>
+    <script>
+        load("#header", "./template/header.html")
+    </script>
+
+    <main>
+        <div class="container">
+            <h2 class="cart-heading">Giỏ hàng</h2>
+        </div>
+
+        <section class="cart">
+            <div class="container">
+                <div class="cart__container">
+                    <!-- IF No Product -->
+                    <!-- <div class="cart__no-product" hidden>
+                        <img src="./assets/images/icon/empty.svg" alt="" class="cart__empty-img">
+                        <span class="cart__notice">Vui lòng bạn <a href="#!">đăng nhập</a> để xem giỏ hàng của
+                            bạn</span>
+                    </div> -->
+                    <!-- If have product -->
+                    <div class="cart__items">
+                        <div class="cart__heading">
+                            <div class="cart__select-all">
+                                <input type="checkbox" class="cart__select-all-checkbox">
+                                <label class="cart__select-all-label">Chọn tất cả</label>
+                            </div>
+                            <label class="cart__header-quantity">Số lượng</label>
+                            <label class="cart__header-total">Thành tiền</label>
+                            <label class="cart__header-delete"></label>
+                        </div>
+                        <div class="cart__body">
+                            <ul class="cart__item-list">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Total -->
+                    <div class="cart-summary">
+                        <div class="cart-summary__subtotal">
+                            <h3 class="cart-summary__label">Thành tiền</h3>
+                            <span class="cart-summary__amout">0 đ</span>
+                        </div>
+                        <div class="cart-summary__total">
+                            <h3 class="cart-summary__label cart-summary__label--bold">Tổng tiền(Thuế VAT)</h3>
+                            <span class="cart-summary__amout cart-summary__amout--bold">0 đ</span>
+                        </div>
+                        <div class="cart-summary__action">
+                            <a href="./payment.html" class="cart-summary__submit">THANH TOÁN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+ 
+    <script src="./assets/js/addCartItem.js"></script>
+</body>
+
+</html>

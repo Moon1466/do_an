@@ -1,0 +1,37 @@
+@import "../abstracts";
+
+
+.breadcrumb {
+    margin-top: 16px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+    }
+
+    &__inner {
+        padding: 16px 8px;
+
+        border-radius: $border-radius;
+        background: #fff;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &:not(:last-child)::after {
+            content: url(../../assets/images/icon/arrow_right.svg);
+        }
+    }
+
+    &__link {
+        font-size: 1.3rem;
+        font-family: "Nunito Sans", sans-serif;
+        color: #212121;
+        text-transform: uppercase;
+    }
+}

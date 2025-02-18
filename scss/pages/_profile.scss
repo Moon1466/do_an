@@ -1,0 +1,228 @@
+@import "../abstracts";
+
+
+.user {
+    margin-top: 16px;
+
+    &__container {
+        display: flex;
+    }
+
+    &__overview {
+        padding: 16px;
+
+        width: 25%;
+        background: #fff;
+
+        border-radius: $border-radius;
+    }
+
+    &__your-rank {
+        padding: 16px 0 10px;
+
+
+    }
+
+    &__rank {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__rank-icon {
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+    &__img-rank {
+        width: 80px;
+        height: 80px;
+    }
+
+    &__name {
+        padding: 10px 0;
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: "Nunito Sans";
+        color: rgb(51, 51, 51);
+    }
+
+    &__info-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        padding-bottom: 12px;
+
+        border-bottom: 1px solid #ccc;
+
+    }
+
+    &__background-membership {
+        padding: 4px 12px;
+
+        background-color: rgb(187, 193, 199);
+        border-radius: 20px;
+
+        font-size: 1.3rem;
+        font-family: "Nunito Sans";
+        color: rgb(51, 51, 51);
+    }
+
+    &__rank-accumulate,
+    &__upgrade-requirement {
+        padding: 10px 0;
+
+        font-size: 1.3rem;
+        font-family: "Nunito Sans";
+
+        color: rgb(122, 126, 127);
+
+        & span {
+            font-weight: 600;
+        }
+    }
+
+    &__upgrade-requirement {
+        padding: 0;
+    }
+
+    &__select {
+        padding: 10px 0;
+    }
+
+    &__select:first-child &__item {
+        display: block;
+    }
+
+    &__item,
+    &__item-primary {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+
+    }
+
+    &__label {
+        font-size: 1.4rem;
+        font-family: "Nunito Sans";
+        color: rgb(33, 33, 33);
+
+        &--active {
+            font-weight: 700;
+            color: rgb(201, 33, 39);
+        }
+    }
+
+    &__selection-sub {
+        margin-top: 16px;
+        padding-left: 40px;
+    }
+
+    &__select-sub {
+        font-size: 1.4rem;
+        font-family: "Nunito Sans";
+        color: rgb(33, 33, 33);
+
+        &--active {
+            color: rgb(201, 33, 39);
+        }
+    }
+
+    &__content {
+        margin-left: 8px;
+
+        width: 75%;
+
+
+    }
+
+    &-dashboard {
+        background: #fff;
+        border-radius: $border-radius;
+
+        &__img-container {
+            width: 100%;
+        }
+
+        &__img-banner {
+            width: 100%;
+        }
+
+        &__body {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            margin-top: 16px;
+            padding-bottom: 16px;
+        }
+
+        &__item {
+            padding: 16px;
+            width: 200px;
+            background-color: rgb(242, 244, 245);
+            border: 1px solid rgb(242, 244, 245);
+            border-radius: $border-radius;
+
+        }
+
+        &__item-label {
+            font-size: 1.6rem;
+            font-weight: 600;
+            font-family: "Nunito Sans";
+            color: rgb(51, 51, 51);
+        }
+
+        &__item-value {
+            font-size: 1.8rem;
+            font-weight: 600;
+            font-family: "Nunito Sans";
+            color: rgb(201, 33, 39);
+        }
+    }
+
+    &-profile {
+        margin-top: 16px;
+        padding: 16px;
+        background: #fff;
+
+        &__title {
+            font-size: 2rem;
+            font-weight: 600;
+            font-family: "Nunito Sans";
+            color: rgb(86, 85, 85);
+        }
+
+        &__field{
+            display: flex;
+            align-items: center;
+            
+            & + &{
+                margin-top: 16px;;
+            }
+        }
+
+        &__label{
+            width: 150px;
+
+            font-size: 1.3rem;
+            font-family: "Nunito Sans";
+   
+        }
+
+        &__input{
+            padding: 5px 10px;
+            width: calc(100% - 300px);
+            height: 36px;
+            border: 1px solid #ced4da;;
+            border-radius: $border-radius;
+
+        }
+    }
+
+
+}

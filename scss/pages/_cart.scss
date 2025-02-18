@@ -1,0 +1,271 @@
+@import "../abstracts";
+
+.cart-heading {
+    margin-top: 16px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+}
+
+.cart {
+    margin-top: 16px;
+
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+
+        border-radius: $border-radius;
+    }
+
+    &__no-product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        display: none;
+
+        padding: 16px 0;
+    }
+
+    &__items {
+        width: 66%;
+    }
+
+    &__empty-img {
+        width: 160px;
+        height: 160px;
+    }
+
+    &__notice {
+        margin-top: 16px;
+        font-size: 1.4rem;
+        font-family: "Nunito Sans";
+        color: rgb(51, 51, 51);
+    }
+
+    &__product-detail {}
+
+    &__heading {
+        display: flex;
+        align-items: center;
+
+        padding: 8px;
+
+        width: 100%;
+
+        background: #fff;
+        border-radius: $border-radius;
+    }
+
+    &__select-all {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        flex-basis: 70%;
+    }
+
+    &__select-all,
+    &__header-quantity,
+    &__header-total {
+
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: "Nunito Sans";
+    }
+
+    &__header-quantity,
+    &__header-total {
+        text-align: center;
+    }
+
+    &__header-quantity {
+        flex-basis: 12.5%;
+    }
+
+    &__header-total {
+        flex-basis: 12.5%;
+    }
+
+    &__header-delete {
+        flex-basis: 5%;
+    }
+
+    &__body {
+        margin-top: 16px;
+        width: 100%;
+
+        border-radius: $border-radius;
+        background: #fff;
+    }
+
+    &-item {
+        padding: 16px 8px;
+
+
+
+
+        &__wrapper {
+            display: flex;
+            align-items: center;
+
+            border-bottom: 1px solid $border-bottom-color;
+            padding-bottom: 16px;
+
+
+
+        }
+
+        &:last-child &__wrapper {
+            border-bottom: 0;
+        }
+
+        &__selection {
+            flex-basis: 5%;
+
+        }
+
+        &__img-container {
+            flex-basis: 15%;
+        }
+
+        &__img {
+            width: 119px;
+            height: 119px;
+        }
+
+        &__detail {
+            flex-basis: 50%;
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+
+            padding-left: 10px;
+        }
+
+        &__name {
+            font-size: 14px;
+            font-family: 'Nunito Sans';
+            color: #333333;
+        }
+
+        &__price,
+        &__quantity {
+            font-size: 1.56rem;
+            font-weight: 650;
+            color: rgb(51, 51, 51);
+        }
+
+
+        &__quantity {
+            flex-basis: 12.5%;
+        }
+
+        &__total {
+            flex-basis: 12.5%;
+
+            font-size: 1.56rem;
+            font-weight: 700;
+            color: rgb(201, 33, 39);
+        }
+
+        &__remove {
+            flex-basis: 5%;
+
+            text-align: center;
+        }
+
+        &__quantity,
+        &__total {
+            text-align: center;
+        }
+
+
+        &__icon {
+            width: 17px;
+            height: 22px;
+        }
+    }
+
+    &-summary {
+        position: sticky;
+        top: 16px;
+        left: 0;
+
+        margin-top: calc(37.42px + 16px);
+        padding: 16px;
+
+        width: 33%;
+
+        background: #fff;
+        border-radius: $border-radius;
+
+        &__subtotal,
+        &__total {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__subtotal {
+            padding-bottom: 10px;
+            border-bottom: 1px solid $border-bottom-color ;
+        }
+
+        &__total {
+            margin-top: 10px;
+        }
+
+        &__label {
+            font-size: 1.56rem;
+            font-family: "Nunito Sans";
+            color: rgb(51, 51, 51);
+
+            &--bold {
+                font-weight: 650;
+            }
+        }
+
+        &__amout {
+            font-size: 1.56rem;
+            color: rgb(51, 51, 51);
+
+            &--bold {
+                font-size: 2.184rem;
+                font-weight: 650;
+                color: rgb(201, 33, 39);
+            }
+        }
+
+        &__action {
+            margin-top: 16px;
+            width: 100%;
+        }
+
+        &__submit {
+
+            display: inline-block;
+
+            padding: 10px 20px;
+
+            width: 100%;
+
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #fff;
+            text-align: center;
+
+            background-image: linear-gradient(90deg, rgb(224, 224, 224) 0%, rgb(224, 224, 224) 100%);
+            border-radius: $border-radius;
+        }
+    }
+
+
+
+
+}
